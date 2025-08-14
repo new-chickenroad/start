@@ -36,9 +36,16 @@
     }
     .btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
     @keyframes float { 0%{transform:translateY(0)} 50%{transform:translateY(-8px)} 100%{transform:translateY(0)} }
-
-    .gate { min-height: 72vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
-    .embed { display: block; width: 100%; min-height: 2000px; border: 0; }
+    .gate{
+      min-height: min(100svh, 100vh);
+      display: flex; align-items: center; justify-content: center;
+      padding: 0 16px; /
+    }
+    .embed{
+      display: block; width: 100%;
+      min-height: 2000px; border: 0;
+      margin: 0;
+    }
   </style>
 </head>
 <body>
@@ -50,6 +57,5 @@
     </main>
   </section>
   <iframe class="embed" src="site/index.html"></iframe>
-
 </body>
 </html>
