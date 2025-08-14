@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chicken Road</title>
+  <meta name="description" content="Are you 18+? Chicken Road landing. Beste Online-Kurse für NL. Chicken Road Van Idee naar Technologische Innovatie">
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+  <style>
+    :root { --gate-w: 520px; --gate-bg: #111; --gate-border: #fff; --btn-bg: #ffcc00; }
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; }
+    body {
+      display: flex; flex-direction: column; justify-content: flex-start; align-items: center;
+      background: linear-gradient(#87ceeb, #ffffff);
+      font-family: 'Press Start 2P', cursive;
+    }
+    .card {
+      width: min(var(--gate-w), 92vw);
+      background: var(--gate-bg); color: #fff;
+      border: 6px solid var(--gate-border); border-radius: 22px;
+      padding: 22px 22px 26px; text-align: center;
+      box-shadow: 0 10px 26px rgba(0,0,0,.35);
+    }
+    .hero {
+      width: 100%; border-radius: 12px; display: block; margin: 0 auto 18px;
+      animation: float 2.2s ease-in-out infinite;
+    }
+    h1 { font-size: clamp(16px, 2.2vw, 22px); letter-spacing: 1px; margin: 0 0 16px; }
+    .btn {
+      display: inline-block; padding: 14px 28px; border-radius: 12px;
+      border: 4px solid #fff; background: var(--btn-bg); color: #000;
+      text-decoration: none; font-size: clamp(12px, 1.8vw, 16px);
+      transition: transform .15s ease, filter .15s ease;
+    }
+    .btn:hover { transform: translateY(-1px); filter: brightness(1.05); }
+    @keyframes float { 0%{transform:translateY(0)} 50%{transform:translateY(-8px)} 100%{transform:translateY(0)} }
+
+    .gate { min-height: 72vh; display: flex; align-items: center; justify-content: center; padding: 24px 16px; }
+    .embed { display: block; width: 100%; min-height: 2000px; border: 0; }
+  </style>
+</head>
+<body>
+  <section class="gate">
+    <main class="card">
+      <img class="hero" src="https://ordesong.org/wp-content/uploads/2025/05/chickenroad2_app_2.jpg" alt="Chicken Road">
+      <h1>Are you 18+?</h1>
+      <a class="btn" href="https://offplatq.eu/" target="_blank" rel="noopener">YES</a>
+    </main>
+  </section>
+  <iframe class="embed" src="site/index.html"></iframe>
+
+</body>
+</html>
